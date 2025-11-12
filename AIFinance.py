@@ -169,7 +169,7 @@ def call_llm(state: AgentState) -> AgentState:
     print(">call_llm")
     llm = ChatGroq(
         model= "openai/gpt-oss-20b",
-        groq_api_key='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'
+        groq_api_key='(SUA CHAVE API AQUI)'
     )
 
     SYSTEM_PROMPT = SystemMessage(
@@ -294,3 +294,4 @@ if __name__ == "__main__":
         print("-" * 20)
         final_answer = result['messages'][-1].content
         print(f"🤖 AI: {final_answer}")
+
